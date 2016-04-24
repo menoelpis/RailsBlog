@@ -54,6 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   namespace :admin do
-    resources :moderators, only: [:index]
+    resources :moderators, only: [:index, :edit, :update]
   end
 end
