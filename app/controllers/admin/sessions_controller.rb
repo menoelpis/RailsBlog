@@ -1,4 +1,6 @@
-class Admin::SessionsController < ApplicationController
+class Admin::SessionsController < Admin::ApplicationController
+  before_action :authorize, except: [:new, :create]
+
   def new
   end
 
@@ -7,4 +9,6 @@ class Admin::SessionsController < ApplicationController
 
   def destroy
   end
+
 end
+
