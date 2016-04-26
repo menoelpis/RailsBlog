@@ -13,11 +13,12 @@ gem 'sdoc',          '~> 0.4.0', group: :doc
 gem 'bcrypt',        '~> 3.1.7'
 
 group :development, :test do
-  gem 'byebug'
+	gem 'faker'
+  	gem 'byebug'
 end
 
 group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+  	gem 'web-console', '~> 2.0'
+  	gem 'spring'
 end
 
